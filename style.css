@@ -1,0 +1,65 @@
+ mux-player {
+            /* Hide the error dialog */
+            --dialog: none;
+
+            /* Hide the loading indicator */
+            --loading-indicator: none;
+
+            /* Target all sections by excluding the section prefix */
+            /* --play-button: none; */
+            --live-button: none;
+            /* --seek-backward-button: none; */
+            /* --seek-forward-button: none; */
+            /* --mute-button: none; */
+            --captions-button: none;
+            --airplay-button: none;
+            --pip-button: none;
+            --fullscreen-button: none;
+            --cast-button: none;
+            --playback-rate-button: none;
+            --volume-range: none;
+            --time-range: none;
+            --time-display: none;
+            --duration-display: none;
+            --rendition-menu-button: none;
+        }
+
+        mux-player.nocontrols {
+            --controls: none;
+        }
+
+
+
+        body {
+            background-color: black;
+            font-family: "IBM Plex Mono", monospace;
+        }
+
+        p {
+            color: #CEEDDB;
+            font-size: 1.2rem;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            color: #DB5461;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 4rem;
+            color: #DB5461;
+        }
+
+        section {
+            margin-bottom: 20rem;
+        }
+
+        nav {
+            padding: 0.7rem 2%;
+        }
