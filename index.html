@@ -15,112 +15,103 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js "></script>
-    <script src="./boidtrace.js"></script> -->
     <!-- <link rel="canonical" href="https://web.site/page"> -->
 
     <meta name="description" content="">
 </head>
 
 <body>
-
-
-    <!-- Content -->
     <nav>
-        <h1>Arturs Visnausks</h1>
+        <h3>Arturs Visnausks</h3>
+        <a class="nav-link" href="mailto:vishniauskas@gmail.com">Contact</a>
     </nav>
     <main>
-        <div>
-            <section>
-                <h2>The Entity</h2>
-                <p>An interactive altar-like installation I worked on as a part of a university group project. It aims
-                    to
-                    induce the feeling of sublime, as the participants face an entity that seemingly possesses more
-                    power
-                    than they do. The core interaction involved users finding a correct combination of artifacts by
-                    placing
-                    them on the altar and then pumping the "heart" of the cybernetic idol, thus reviving it.
-                    <br>
-                    <br>
-                    I developed the main state machine in Chataigne that contained the main execution logic, allowing
-                    the
-                    installation to "loop" to the beginning without manually resetting it. Chataigne also served as a
-                    centralized system for collecting, processing and routing signals collected from an ESP32
-                    controlling
-                    artifact RFID scanners and initializing light sensor, as well as another ESP32 governing the
-                    pressure
-                    sensors and vibration feedback of the "heart".
-                    <br>
-                    <br>
-                    Outputs of the system included the LED strips, visuals controlled by Touch Designer and a dynamic
-                    audio
-                    system. I implemented the audio system using Pure Data with sounds designed in Reaper and actuated
-                    through user inputs, routed from Chataigne through OSC commands. When recording sounds, along
-                    traditional microphones, I utilized an electromagnetic microphone (Ether V2).
-                </p>
-                <mux-player playback-id="GPfmwrIgT2NFNGqCNsMITMxr4CF7kw9bsxoU2rWGsNE"></mux-player>
-            </section>
-            <section>
-                <h2>Granular Synthesis controlled by L-Systems</h2>
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2296028847&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <div
-                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <a href="https://soundcloud.com/vv-vishnya" title="vishnya" target="_blank"
-                        style="color: #cccccc; text-decoration: none;">vishnya</a> · <a
-                        href="https://soundcloud.com/vv-vishnya/sets/lgsnth" title="lgsnth" target="_blank"
-                        style="color: #cccccc; text-decoration: none;">lgsnth</a>
+        <section>
+            <h2>About</h2>
+            <p> I have a background in computer science and a special interest in arts and expression. I am
+                particularly drawn to sound as a medium, with a strong interest in sound design and digital
+                signal processing. I enjoy curating DJ mixes and field recording, and love working on projects where
+                sound is a standalone form of expression, a means for experimentation or a part of
+                mixed-media installations.
+            </p>
+            <mux-player disable-tracking disable-cookies playback-id="J5b8zU02GD7y9oMfn8XIz38eJ00r004yg02Fre02kaVK532M"
+                muted="true" loop class="attachment" accent-color="#CEEDDB" autoplay="muted"></mux-player>
+            <p>Portrait of me made in p5.js. I implemented <a href="https://en.wikipedia.org/wiki/Boids">boid</a>
+                logic, and made them be attracted to the white pixels of the underlying thresholded image. </p>
+
+        </section>
+        <section>
+            <span id="entity" class="anchor"></span>
+            <h2>The Entity</h2>
+            <p>An interactive altar-like installation I worked on as a part of a university group project. It aims
+                to induce the feeling of sublime, as the participants face an entity that seemingly possesses more
+                power than they do. The core interaction involved users finding a correct combination of artifacts
+                by placing them on the altar and then pumping the "heart" of the cybernetic idol, thus reviving it.
+                <br>
+                <br>
+                I developed the main state machine in Chataigne that contained the main execution logic. This system
+                also
+                served as a centralized system for collecting, processing and routing signals collected from an ESP32
+                controlling artifact RFID scanners and initializing light sensor, as well as another ESP32 governing
+                the pressure sensors and vibration feedback of the "heart".
+                <br>
+                <br>
+                Outputs of the system included the LED strips, visuals controlled by Touch Designer and a dynamic
+                audio system. I implemented the audio system using Pure Data with sounds designed in Reaper and
+                actuated through user inputs, routed from Chataigne through OSC commands. When recording sounds,
+                along traditional microphones, I utilized an electromagnetic microphone (Ether V2).
+            </p>
+            <mux-player disable-tracking disable-cookies playback-id="GPfmwrIgT2NFNGqCNsMITMxr4CF7kw9bsxoU2rWGsNE"
+                muted="false" volume="0.5" accent-color="#CEEDDB" class="attachment"></mux-player>
+        </section>
+        <section>
+            <h2>DJ sets</h2>
+            <!-- <div class="split"> -->
+                <!-- <p></p> -->
+                <div class="attachment">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2308084044&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div
+                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/vv-vishnya" title="vishnya" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">vishnya</a> · <a
+                            href="https://soundcloud.com/vv-vishnya/sets/sets" title="sets" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">sets</a>
+                    </div>
                 </div>
-                <p>Above are the results of the experiment, where I attempted to use <a
-                        href="https://en.wikipedia.org/wiki/L-system">L-systems</a> to modify
-                    an audio signal. The chosen sound manipulations are based on the theory of <a
-                        href="https://en.wikipedia.org/wiki/Granular_synthesis">granular
-                        synthesis</a>. I defined a grammar with variable "F" representing a forwards playback of a grain
-                    and
-                    "B" - backwards playback. Grammar constants "+" and "-" are used to control carrier position the
-                    input
-                    sound, "D" and "d" were used to adjust duration of the grain. I used branching ("[" and "]") to
-                    overlap
-                    recursive structures, with depth of the branch controlling the pitch of the grains.
-                </p>
-            </section>
-            <section>
-                <h2>A celestial flower</h2>
-                <p>
-                    Some visuals I made in Touch Designer. The repeating shape is a simple f(x,y)=x^2 + y^2 paraboloid,
-                    with
-                    its domain restricted to [-1,1] for x and y values. It looked like a tulip flower, so I decided to
-                    make a rose out of it.
-                    I instanced the shape with different scales and added rotation and some noise.
-                </p>
-                <mux-player playback-id="g2iRoJzsERycoa7FgGDt01b18NZM5G6025YHdWsJ5ZsUk" loop
-                    class="nocontrols"></mux-player>
+            <!-- </div> -->
+        </section>
+        <section>
+            <h2>A celestial flower</h2>
+            <p>
+                Some visuals I made in Touch Designer. The repeating shape is a simple f(x,y)=x^2 + y^2 paraboloid,
+                with its domain restricted to [-1,1] for x and y values. It looked like a tulip flower, so I decided to
+                make a rose out of it. I instanced the shape with different scales and added rotation and some noise.
+            </p>
+            <mux-player disable-tracking disable-cookies playback-id="g2iRoJzsERycoa7FgGDt01b18NZM5G6025YHdWsJ5ZsUk"
+                muted="true" loop class="nocontrols autoplay" accent-color="#CEEDDB" class="attachment"></mux-player>
 
-                <p>Here is a more chaotic variation</p>
-                <mux-player playback-id="jIpFju6yrToKab8nCmaag5HxC5PXqxK4N00bzbtR4Z9M" muted="true" loop
-                    class="nocontrols"></mux-player>
-
-            </section>
-
-            <section>
-                <h2>Boidrait</h2>
-                <mux-player playback-id="J5b8zU02GD7y9oMfn8XIz38eJ00r004yg02Fre02kaVK532M" muted="true" loop
-                    class="nocontrols"></mux-player>
-                <p>Portrait of me made in p5.js. I implemented <a
-                        href="https://en.wikipedia.org/wiki/Boids">boid</a> logic, and made
-                    them be attracted to the white pixels of the underlying thresholded image. </p>
-            </section>
-            <section>
-                <h2>Frequency domain stretching</h2>
-                <mux-player playback-id="FXsYrPbduwM00ifbYDIQeXhGiK1Jky1pKPIXksFI73i00" muted="true" loop
-                    style="width: 70%"></mux-player>
-                <p>A small experiment in Python where an audio signal is transformed by uniformly scaling and shifting
+            <p>Here is a more chaotic variation</p>
+            <mux-player disable-tracking disable-cookies playback-id="jIpFju6yrToKab8nCmaag5HxC5PXqxK4N00bzbtR4Z9M"
+                muted="true" loop class="nocontrols autoplay" accent-color="#CEEDDB" class="attachment"></mux-player>
+        </section>
+        <section>
+            <h2>Frequency domain stretching</h2>
+            <div class="split">
+                <p>A small experiment in Python where an audio signal is transformed by uniformly scaling and
+                    shifting
                     its
-                    frequency axis inside a Short-Time Fourier Transform. Resulting effect is a distorted pitch shift.
+                    frequency axis inside a Short-Time Fourier Transform. Resulting effect is a distorted pitch
+                    shift.
                 </p>
-            </section>
-            <section>
-                <h2>A Ruin</h2>
+                <mux-player disable-tracking disable-cookies playback-id="FXsYrPbduwM00ifbYDIQeXhGiK1Jky1pKPIXksFI73i00"
+                    accent-color="#CEEDDB" class="attachment"></mux-player>
+            </div>
+        </section>
+        <section>
+            <span id="aruin" class="anchor"></span>
+            <h2>A Ruin</h2>
+            <div class="attachment">
                 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2270236505&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                 <div
@@ -130,51 +121,71 @@
                         href="https://soundcloud.com/vv-vishnya/aruin" title="aruin" target="_blank"
                         style="color: #cccccc; text-decoration: none;">aruin</a>
                 </div>
-                <p>"This sound collage explores the feeling of panic, dissociation and pulls the listener into the chaos
-                    reigning in the vast expanse of a distressed consciousness. An overloaded conveyor belt of voices
-                    and thoughts being stuffed in one's head, each new one shoving the chain of previous ones deeper
-                    and deeper, inevitably leading to a collapse, or a rebirth.
-                    The work does not include any coherent dialogue, instead it manipulates field recordings of various
-                    everyday objects and environments, allowing their unique, imperfect and unpredictable nature to
-                    come to light and guide the narrative. They are combined in a lush landscape with a sole purpose of
-                    stimulating the imagination, prompting the listener to envision their own story while steering away
-                    from comfort and mundanity."
+            </div>
+            <p>"This sound collage explores the feeling of panic, dissociation and pulls the listener into the chaos
+                reigning in the vast expanse of a distressed consciousness. An overloaded conveyor belt of voices
+                and thoughts being stuffed in one's head, each new one shoving the chain of previous ones deeper
+                and deeper, inevitably leading to a collapse, or a rebirth.
+                The work does not include any coherent dialogue, instead it manipulates field recordings of various
+                everyday objects and environments, allowing their unique, imperfect and unpredictable nature to
+                come to light and guide the narrative. They are combined in a lush landscape with a sole purpose of
+                stimulating the imagination, prompting the listener to envision their own story while steering away
+                from comfort and mundanity."
+            </p>
+        </section>
+        <section>
+            <span id="g-systems" class="anchor"></span>
+            <h2>G-Systems</h2>
+            <div class="split">
+                <p>The playlist contains results of an experiment, where I attempted to use <a
+                        href="https://en.wikipedia.org/wiki/L-system">L-systems</a> to modify
+                    an audio signal. The chosen sound manipulations are based on the theory of <a
+                        href="https://en.wikipedia.org/wiki/Granular_synthesis">granular
+                        synthesis</a>. I defined a grammar with variable "F" representing a forwards playback of a grain
+                    and "B" - backwards playback. Grammar constants "+" and "-" are used to control carrier position the
+                    input sound, "D" and "d" were used to adjust duration of the grain. I used branching ("[" and "]")
+                    to overlap recursive structures, with depth of the branch controlling the pitch of the grains.
                 </p>
-            </section>
-            <section>
-                <h2>Torture chamber simulator</h2>
-                <mux-player playback-id="bBIvlue5xLEsZX4mrJ9RaYRXcNeUbi9f02AtQSf5pGLs" muted="true" loop
-                    class="nocontrols"></mux-player>
-                <p>A facial filter made in Python using Mediapipe for a CV-related university project, it managed to
-                    scare my teachers.</p>
-            </section>
-            <!-- <section>
-                <h2>p5</h2>
-                <div id="boid-trace">
-                    <canvas id="boid-trace-canvas"></canvas>
+                <div class="attachment">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2296028847&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div
+                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/vv-vishnya" title="vishnya" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">vishnya</a> · <a
+                            href="https://soundcloud.com/vv-vishnya/sets/lgsnth" title="lgsnth" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">lgsnth</a>
+                    </div>
                 </div>
-            </section> -->
-            <!-- <section>
+            </div>
+        </section>
+        <section>
+            <span id="tcs" class="anchor"></span>
+            <h2>Torture chamber simulator</h2>
+            <mux-player class="attachment autoplay" disable-tracking disable-cookies
+                playback-id="bBIvlue5xLEsZX4mrJ9RaYRXcNeUbi9f02AtQSf5pGLs" muted="true" loop
+                accent-color="#CEEDDB"></mux-player>
+            <p>A facial filter made in Python using Mediapipe for a CV-related university project, it managed to
+                scare my teachers.</p>
+        </section>
+        <!-- <section>
             <h2>Fever Dream</h2>
         </section> -->
-        </div>
     </main>
     <script>
-        var players = document.querySelectorAll('mux-player.nocontrols')
+        var players = document.querySelectorAll('mux-player')
         console.log(players)
         const observerOptions = {
-            root: null, // uses the browser viewport
-            threshold: 0.1 // 50% of the individual player must be visible
+            root: null,
+            threshold: 0.5
         };
 
         const observerCallback = (entries) => {
             entries.forEach(entry => {
-                // entry.target points specifically to the video element that triggered the event
                 const currentPlayer = entry.target;
 
                 if (entry.isIntersecting) {
                     currentPlayer.play().catch(error => {
-                        // Handle browser autoplay restrictions (e.g., videos might need to be muted)
                         console.log("Autoplay blocked for this player:", error);
                     });
                 } else {
@@ -183,10 +194,8 @@
             });
         };
 
-        // 2. Initialize a single observer instance
         const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-        // 3. Attach the observer to every player found on the page
         players.forEach(player => {
             observer.observe(player);
         });
