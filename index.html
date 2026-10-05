@@ -27,24 +27,29 @@
     </nav>
     <main>
         <section>
-            <!-- <h2>Me</h2> -->
-            <p> Hi, I am Arturs. </p>
+            <h2>About</h2>
+            <p> I am a technologist making systems where one can see, hear or touch the result. I find inspiration
+                in a wide range of fields - from rigid mathimatical concepts to something that I felt momentarily.
+                Some of my work tries to obey the rules, some does not. Nevertheless, a pattern is obervable in
+                the things I do and strive to do - seeking some form of intererrelations between chaos and order.</p>
             <mux-player disable-tracking disable-cookies playback-id="J5b8zU02GD7y9oMfn8XIz38eJ00r004yg02Fre02kaVK532M"
                 muted="true" loop class="attachment" accent-color="#CEEDDB" autoplay="muted"></mux-player>
             <p>Portrait of me made in p5.js. Little particles are simple <a
                     href="https://en.wikipedia.org/wiki/Boids">boids</a>. None of the 700 of them have a goal to draw my
                 face, but they are left with no choice as they gravitate towards the white pixels of an invisible
-                thresholded image while clashing and pushing each other.
+                thresholded image.
             </p>
 
         </section>
         <section>
             <span id="entity" class="anchor"></span>
             <h2>The Entity</h2>
-            <p>An interactive altar-like installation I worked on as a part of a university group project. It aims
+            <p>An interactive altar-like installation I worked on as a part of a 6 person university group project. It
+                aims
                 to induce the feeling of sublime, as the participants face an entity that seemingly possesses more
                 power than they do. The core interaction involved users finding a correct combination of artifacts
-                by placing them on the altar and then pumping the "heart" of the cybernetic idol, thus reviving it.
+                by placing them on the altar and then pumping the "heart" of the cybernetic idol, thus reviving it. The
+                installation was exhibited at GOGBOT2026 and invited to Dutch Design Week 2026.
                 <br>
                 <br>
                 I developed the main state machine in Chataigne that contained the main execution logic. This system
@@ -57,7 +62,7 @@
                 Outputs of the system included the LED strips, visuals controlled by Touch Designer and a dynamic
                 audio system. I implemented the audio system using Pure Data with sounds designed in Reaper and
                 actuated through user inputs, routed from Chataigne through OSC commands. When recording sounds,
-                along traditional microphones, I utilized an electromagnetic microphone (Ether V2).
+                along traditional microphones, I employed my electromagnetic microphone (Ether V2).
             </p>
             <mux-player disable-tracking disable-cookies playback-id="GPfmwrIgT2NFNGqCNsMITMxr4CF7kw9bsxoU2rWGsNE"
                 muted="false" volume="0.5" accent-color="#CEEDDB" class="attachment"></mux-player>
@@ -70,11 +75,22 @@
                         href="https://en.wikipedia.org/wiki/L-system">L-systems</a> to modify
                     an audio signal. The chosen sound manipulations are based on the theory of <a
                         href="https://en.wikipedia.org/wiki/Granular_synthesis">granular
-                        synthesis</a>. <br>I defined a grammar with variable "F" representing a forwards playback of a grain
-                    and "B" - backwards playback. Grammar constants "+" and "-" are used to control carrier position the
-                    input sound, "D" and "d" were used to adjust duration of the grain. "T" and "t" - overlap between
-                    consecutive grains. Branching ("[" and "]") is used to play these recursive sound structures in
-                    parallel, with depth of the branch controlling the pitch of the grains. More
+                        synthesis</a>. Inspired by the ideas of emergence, my goal was to achieve a complex,
+                    unpredictable behaviour stemming from a simple set of rules. I was wandering how fractalous,
+                    self-repetitive nature of L-systems would translate to sound.
+                    <br><br>
+                    Resulting tool is a kind of a musical instrument that is very far from being intuitive, but an
+                    instrument neverhteless. It is deterministic, meaning that given an initial configuration (system
+                    parameters, L-system axiom and rules) the resulting sound can be reproduced. However "playing" it
+                    feels more like clueless tinkering, with rules looking like this:
+                    <br>
+                    <br>
+                    F[dF++F++F+B]+F+F-B[d+tttFFF+F+FTT+FF-B-B-B-B]F++F++F++F
+                    <br>
+                    <br>
+                    and amounting to 100000 symbols in the final "sentence" which needs to be parsed to sound. It is
+                    slow and convoluted, but can give some very interesting results, with output sounds ranging from
+                    drone to musique concrète. More
                     technical description and source code is available on <a
                         href="https://github.com/pukanjourpour/g-systems">GitHub</a>.
                 </p>
@@ -98,7 +114,7 @@
                 playback-id="bBIvlue5xLEsZX4mrJ9RaYRXcNeUbi9f02AtQSf5pGLs" muted="true" loop
                 accent-color="#CEEDDB"></mux-player>
             <p>
-                A facial filter I made in Python for a CV-related university project, which managed to scare my
+                A face filter I made in Python for a CV-related university project, which managed to scare my
                 teachers.
                 I used MediaPipe to track the facial features in real-time. Source code available <a
                     href="https://github.com/pukanjourpour/torture-chamber-simulator">here</a>.
@@ -118,7 +134,9 @@
                         style="color: #cccccc; text-decoration: none;">aruin</a>
                 </div>
             </div>
-            <p>"This sound collage explores the feeling of panic, dissociation and pulls the listener into the chaos
+            <p> A sound collage made for a university course. All source sounds were self-gathered. Here is the
+                official description:<br><br>
+                "This sound collage explores the feeling of panic, dissociation and pulls the listener into the chaos
                 reigning in the vast expanse of a distressed consciousness. An overloaded conveyor belt of voices
                 and thoughts being stuffed in one's head, each new one shoving the chain of previous ones deeper
                 and deeper, inevitably leading to a collapse, or a rebirth.
@@ -134,7 +152,16 @@
         <section>
             <h2>DJ sets</h2>
             <div class="split">
-                <p>The playlist contains some of my guest performances at internet radios and my friends art exhibition.
+                <p>I DJ from time to time, my selections are usually driven by the goal of curating a deep listening
+                    experience for myself and whoever else is exposed to them. Soundscapes, experimental and ambient
+                    music is what I
+                    listen to and enjoy the most, mainly because of its ability to "encode" emotions in an abstract way,
+                    leaving the mind wandering and the imagination aroused. Similarly, when curating my mixes, I usually
+                    end up
+                    embedding some feeling or vision on a more macro scale.
+                    <br><br>
+                    The playlist contains some of my guest performances at internet radios and my friends art
+                    exhibition.
                     On my SoundCloud channel, <a href="https://soundcloud.com/vv-vishnya">vishnya</a> you can find some
                     more mixes that I made.
                 </p>
